@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Freddy Chagua - Portafolio</title>
+    <title>Acerca de - Freddy Chagua</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
@@ -17,25 +17,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
-                    <!-- Cambié los enlaces a las rutas de Flask -->
                     <li class="nav-item"><a class="nav-link" href="contacto">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="acerca">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="acerca">Acerca de</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="bg-primary text-white text-center py-5">
-        <h1>Bienvenido a mi Página</h1>
-        <p class="lead">Soy estudiante de software fullstack y apasionado por la tecnología</p>
-    </header>
-
-    <main class="container my-5">
-        <section id="inicio" class="text-center py-4">
-            <h2>Inicio</h2>
-            <p>Explora más sobre mi trabajo y conocimientos en el desarrollo web.</p>
-            <img class="img-fluid rounded-circle" src="{{ url_for('static', filename='images/foto.png') }}" alt="Foto de Freddy Chagua" width="200">
-        </section>
+    <main class="container my-5 text-center">
+        <h2>Acerca de</h2>
+        <p>Me llamo Freddy Chagua, estudiante de inglés y sistemas. Me encanta el desarrollo web y la innovación tecnológica.</p>
     </main>
 
     <footer class="bg-dark text-white text-center py-3">
@@ -43,6 +34,5 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
